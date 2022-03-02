@@ -17,6 +17,21 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
 
+Route::get('/return', [HomeController::class, 'return']);
+Route::get('/pipi', [HomeController::class, 'pipi']);
+
+Route::get('/rechne/{number1?}&{number2?}', function ($number1 = null, $number2 = null) {
+    $number1 = request('number1');
+    $number2 = request('number2');
+    if (isset($number1)) {
+        if (isset($number2)) {
+            $ergebnis=$number1+$number2;
+            return view('rechne',['ergebnis'=>$ergebnis]);
+        }
+        return 'ich brauch zwei zahlen ! dies is nur eine -> ' . strip_tags($number1);
+    }
+});
+
 Route::get('/store/{category?}/{item?}', function ($category = null, $item = null) {
     $category = request('category');
     if (isset($category)) {

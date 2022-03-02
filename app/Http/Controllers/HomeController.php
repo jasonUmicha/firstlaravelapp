@@ -20,4 +20,17 @@ class HomeController extends Controller
     {
         return view('contact');
     }
+
+    public function pipi():string
+    {
+        return view('pipi');
+    }
+
+    public function return():string
+    {
+
+        return view('welcome');
+    }
+
+
 }
