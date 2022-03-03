@@ -18,8 +18,9 @@
 <body class="antialiased">
 <div class="relative p-4">
     <nav>
-        <a href="{{route('home.index')}}">home</a>
+        <a href="{{route('home.index')}}">Home</a>
         <a href="{{route('guitars.index')}}">Guitars</a>
+        <a href="{{route('craftingTable.index')}}">Crafting Table</a>
 
         <a href="{{route('home.about')}}">About</a>
         <a href="{{route('home.contact')}}">Contact</a>

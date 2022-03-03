@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('content')
-    this is content I
+    this is content CT
 @endsection
