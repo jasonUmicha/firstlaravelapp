@@ -18,9 +18,22 @@
         body {
             font-family: 'Nunito', sans-serif;
         }
+        .p-4{
+            padding: 1rem;
+        }
+        nav a{
+            padding: .5rem;
+        }
     </style>
 </head>
 <body class="antialiased">
+<div class="relative p-4">
+    <nav>
+        <a href="/">home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</div>
 <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0">
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
