@@ -29,13 +29,13 @@
         </div>
 
         <div class="mt-8  overflow-hidden ">
-            <p id="penis">ergebnis -> </p>
+            <p id="abc">ergebnis -> </p>
         </div>
 
     </div>
 </div>
 <script>
-    document.getElementById('penis').innerHTML+=@json($ergebnis);
+    document.getElementById('abc').innerHTML+=@json($ergebnis);
 </script>
 </body>
 </html>
