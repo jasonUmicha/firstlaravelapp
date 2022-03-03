@@ -1,4 +1,5 @@
 @extends('layout')
+@section('title','Welcome')
 
 @section('content')
     @if (Route::has('login'))

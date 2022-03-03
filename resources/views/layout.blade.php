@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>@yield('title')</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -37,5 +37,6 @@
 <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0">
     @yield('content')
 </div>
+@yield('scripts')
 </body>
 </html>

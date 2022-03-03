@@ -1,4 +1,5 @@
 @extends('layout')
+@section('title','Contact Us')
 
 @section('content')
 <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0">
@@ -13,4 +14,8 @@
         </div>
 
     </div>
+@endsection
+
+@section('scripts')
+        <script>alert('content')</script>
 @endsection
