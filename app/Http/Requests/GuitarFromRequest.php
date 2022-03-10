@@ -24,7 +24,8 @@ class GuitarFromRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'=>'required',
+
+             'name'=>'required',
             'brand'=>'required',
             'year_made'=>['required','integer'],
         ];

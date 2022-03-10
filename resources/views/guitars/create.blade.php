@@ -26,7 +26,7 @@
     <div>
         <label class="text-sm" for="year_made">Year Made</label>
         <input class="text-lg border-1" type="text" id="year_made" value="{{ old('year_made') }}" name="year_made">
-        @error('year')
+        @error('year_made')
         <div class="form-error">
             {{$message}}
         </div>
