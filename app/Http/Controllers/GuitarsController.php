@@ -49,15 +49,9 @@ class  GuitarsController extends Controller
      */
     public function store(GuitarFromRequest $request)
     {
+        //Post
         $data = $request->validated();
-        // POST
-        $guitar = new Guitar();
-
-        $guitar->name = $data['guitar-name'];
-        $guitar->brand = $data['brand'];
-        $guitar->year_made = $data['year'];
-
-        $guitar->save();
+        Guitar::create($data);
 
         return redirect()->route('guitars.index');
     }
@@ -102,11 +96,7 @@ class  GuitarsController extends Controller
         //POST , put , patch
         $data = $request->validated();
 
-        $guitar->name = $data['guitar-name'];
-        $guitar->brand = $data['brand'];
-        $guitar->year_made = $data['year'];
-
-        $guitar->save();
+        $guitar->update($data);
 
         return redirect()->route('guitars.show',$guitar->id);
     }

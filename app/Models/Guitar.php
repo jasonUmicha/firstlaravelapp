@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Guitar extends Model
 {
     use HasFactory;
+    protected $fillable=['name','brand','year_made'];
 }
