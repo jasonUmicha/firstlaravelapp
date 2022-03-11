@@ -37,6 +37,12 @@
         <button class="border-1" type="submit">Submit</button>
     </div>
 </form>
-
+        <form class="form bg-white p6 border-1" method="POST" action="{{ route('guitars.destroy',['guitar'=>$guitar->id]) }}">
+            @csrf
+            @method('DELETE')
+        <div>
+            <button class="border-1" type="submit">Delete</button>
+        </div>
+        </form>
     </div>
 @endsection
